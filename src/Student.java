@@ -12,6 +12,7 @@ public class Student {
         this.enrolledCourses = enrolledCourses;
     }
 
+    // Method: Displays Student information
     void displayStudentInfo(){
         System.out.println("==== Student Information ====");
         System.out.println("Student Name: " + this.studentName);

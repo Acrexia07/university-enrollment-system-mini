@@ -12,6 +12,7 @@ public class Course {
         this.creditUnits = creditUnits;
     }
 
+    // Method: Displays Course Information
     String displayCourseDetails(){
         return String.format("[Code: %s] %s - Credited Units: %d units.",this.courseCode, this.courseName, this.creditUnits);
     }

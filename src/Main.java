@@ -15,6 +15,7 @@ public class Main {
         // Initialization: Welcome Message
         System.out.println("Welcome to the Enrollment System!\n");
 
+        // Input: User input - Student basic information
         System.out.println("==== Register Student Account ====");
         System.out.print("Enter your Name: ");
         studentName = scn.nextLine();
@@ -58,8 +59,9 @@ public class Main {
             }
             else {
                 inputInt = scn.nextInt();
-                scn.nextLine();
+                scn.nextLine(); // Clears scanner buffer
 
+                // Process: Validate if the inputted integer is less than or equal to 0.
                 if (inputInt <= 0) {
                     System.out.println("Invalid input: Enter a number greater than 0! Please try again.");
                 }
