@@ -31,6 +31,7 @@ public class Main {
         // Process: Loop based on numOfCourses' index
         for (int i = 0; i < courses.length; i++) {
             // Process: Pass all the data to the course array
+            System.out.println("\nCourse no." + (i + 1));
             courses[i] = courseDetails(scn);
         }
 
@@ -79,11 +80,11 @@ public class Main {
         System.out.print("Course Name: ");
         String courseName = scn.nextLine();
         System.out.print("Course Code: ");
-        String courseCode = scn.nextLine();
+        String courseCode = scn.nextLine().toUpperCase();
 
         // Process: Validate user input
         int creditUnits = validateInput_Integer(scn, "Credited Units: ");
 
-        return new Course(courseName,courseCode, creditUnits);
+        return new Course(courseCode, courseName, creditUnits);
     }
 }

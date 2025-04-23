@@ -14,10 +14,10 @@ public class Student {
 
     // Method: Displays Student information
     void displayStudentInfo(){
-        System.out.println("==== Student Information ====");
-        System.out.println("Student Name: " + this.studentName);
+        System.out.println("\n==== Student Information ====");
+        System.out.println("\nStudent Name: " + this.studentName);
         System.out.println("Student ID: " + this.studentId);
-        System.out.println("Courses Enrolled: ");
+        System.out.println("\nCourses Enrolled: ");
 
         // Process: For aggregation
         for (Course course : enrolledCourses) {
